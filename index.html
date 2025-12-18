@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal website: projects, research, and an AI Automation Agency (AAA) offering productized workflow packages."
+    />
+    <meta name="theme-color" content="#0b1020" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nikhilesh — Projects, Research, and AAA" />
+    <meta
+      property="og:description"
+      content="Projects, research notes, and productized AI automation workflows for real estate, law, and e-commerce."
+    />
+
+    <title>Nikhil — Projects, Research, and AAA</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text" data-bind="site.name">Nikhil</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#education">Education</a>
+          <a class="nav__link" href="#experience">Experience</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#research">Research</a>
+          <a class="nav__link" href="#advancements">Bioinformatics</a>
+          <a class="nav__link" href="#agency">AAA</a>
+          <a class="nav__link" href="#writing">Writing</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="topbar__actions">
+          <button class="btn btn--ghost" id="themeToggle" type="button">
+            <span class="btn__icon" aria-hidden="true">◐</span>
+            <span class="btn__label">Theme</span>
+          </button>
+          <a class="btn btn--primary" href="#contact">Let’s talk</a>
+          <button class="iconbtn" id="navToggle" type="button" aria-label="Open menu">
+            <span class="iconbtn__lines" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobileNav" id="mobileNav" hidden>
+        <div class="container mobileNav__inner">
+          <a class="mobileNav__link" href="#about">About</a>
+          <a class="mobileNav__link" href="#education">Education</a>
+          <a class="mobileNav__link" href="#experience">Experience</a>
+          <a class="mobileNav__link" href="#projects">Projects</a>
+          <a class="mobileNav__link" href="#research">Research</a>
+          <a class="mobileNav__link" href="#advancements">Bioinformatics</a>
+          <a class="mobileNav__link" href="#agency">AAA</a>
+          <a class="mobileNav__link" href="#writing">Writing</a>
+          <a class="mobileNav__link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <div class="avatarCard reveal">
+              <img class="avatar" src="Nikhilesh Dangi.jpg" alt="Portrait of Nikhilesh Dangi" />
+              <div class="avatarCard__text">
+                <div class="avatarCard__name" data-bind="site.name">Nikhilesh Dangi</div>
+                <div class="avatarCard__role" data-bind="site.tagline">Bioinformatician • Machine Learning • Data Science</div>
+              </div>
+            </div>
+            <p class="eyebrow" data-bind="hero.eyebrow">AI • Automation • Research</p>
+            <h1 class="hero__title">
+              <span data-bind="hero.title">I build practical AI systems</span><br />
+              <span class="text-gradient" data-bind="hero.subtitle">that ship, scale, and stay reliable.</span>
+            </h1>
+            <p class="hero__lede" data-bind="hero.lede">
+              I share my projects, research notes, and a productized AI Automation Agency (AAA) focused on workflow
+              packages—setups plus maintenance.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">Explore projects</a>
+              <a class="btn btn--ghost" href="#agency">See AAA packages</a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="metaCard reveal">
+                <div class="metaCard__kicker">Focus</div>
+                <div class="metaCard__value" data-bind="hero.focus">AI automation • Agents • RAG</div>
+              </div>
+              <div class="metaCard reveal">
+                <div class="metaCard__kicker">Now building</div>
+                <div class="metaCard__value" data-bind="hero.nowBuilding">Lead-response + CRM agent workflows</div>
+              </div>
+              <div class="metaCard reveal">
+                <div class="metaCard__kicker">Location</div>
+                <div class="metaCard__value" data-bind="hero.location">Remote</div>
+              </div>
+            </div>
+
+            <div class="chips" id="quickLinks" aria-label="Quick links"></div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="orb">
+              <div class="orb__inner"></div>
+              <div class="orb__grid"></div>
+            </div>
+            <div class="statStack" aria-label="Highlights">
+              <div class="stat">
+                <div class="stat__num" data-bind="highlights.0.value">48h</div>
+                <div class="stat__label" data-bind="highlights.0.label">Micro-SaaS build sprint</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num" data-bind="highlights.1.value">$2–5k</div>
+                <div class="stat__label" data-bind="highlights.1.label">AAA setup pricing</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num" data-bind="highlights.2.value">$300–500</div>
+                <div class="stat__label" data-bind="highlights.2.label">Monthly maintenance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container section__grid">
+          <div class="section__head reveal">
+            <h2 class="section__title">About</h2>
+            <p class="section__subtitle" data-bind="about.subtitle">
+              I’m a builder and researcher who cares about measurable outcomes and boring reliability.
+            </p>
+          </div>
+          <div class="section__body reveal">
+            <div class="prose" data-bind="about.body">
+              <p>
+                I work at the intersection of product, engineering, and applied research—shipping systems that are
+                accurate, fast, and maintainable.
+              </p>
+              <p>
+                On this site you’ll find my projects, research interests, and how I help businesses implement AI without
+                wasting money.
+              </p>
+            </div>
+
+            <div class="twoCol">
+              <div class="card">
+                <h3 class="card__title">What I care about</h3>
+                <ul class="list" id="aboutCare"></ul>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Tooling I use</h3>
+                <ul class="list" id="aboutTools"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="education">
+        <div class="container section__grid">
+          <div class="section__head reveal">
+            <h2 class="section__title">Education & Credentials</h2>
+            <p class="section__subtitle" data-bind="education.subtitle">
+              Academic foundation in bioinformatics with hands-on computational biology and data science.
+            </p>
+          </div>
+          <div class="section__body reveal">
+            <div class="twoCol">
+              <div class="card">
+                <h3 class="card__title">Education</h3>
+                <ul class="list list--tight" id="educationList"></ul>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Certifications</h3>
+                <ul class="list list--tight" id="certificationList"></ul>
+                <h3 class="card__title" style="margin-top:16px;">Achievements</h3>
+                <ul class="list list--tight" id="achievementList"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="experience">
+        <div class="container section__grid">
+          <div class="section__head reveal">
+            <h2 class="section__title">Experience</h2>
+            <p class="section__subtitle" data-bind="experience.subtitle">
+              Teaching, research supervision, and applied industry work across ML, bioinformatics, and deep learning.
+            </p>
+          </div>
+          <div class="section__body">
+            <div class="gridCards" id="experienceGrid" aria-label="Experience list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="projects">
+        <div class="container section__grid">
+          <div class="section__head reveal">
+            <h2 class="section__title">Projects</h2>
+            <p class="section__subtitle" data-bind="projects.subtitle">
+              Product work, experiments, and systems I’ve shipped (or am actively iterating on).
+            </p>
+          </div>
+          <div class="section__body">
+            <div class="gridCards" id="projectsGrid" aria-label="Project list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="research">
+        <div class="container section__grid">
+          <div class="section__head reveal">
+            <h2 class="section__title">Research</h2>
+            <p class="section__subtitle" data-bind="research.subtitle">
+              Topics I’m exploring, papers I’m reading, and ideas I’m testing.
+            </p>
+          </div>
+          <div class="section__body">
+            <div class="gridCards" id="researchGrid" aria-label="Research list"></div>
+            <div class="note reveal">
+              <div class="note__title">Want to collaborate?</div>
+              <div class="note__body" data-bind="research.collabNote">
+                If you’re working on applied ML/LLM systems, evaluation, or AI automation infrastructure, I’d love to
+                chat.
+              </div>
+              <a class="note__cta" href="#contact">Reach out →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="advancements">
+        <div class="container section__grid">
+          <div class="section__head reveal">
+            <h2 class="section__title">Bioinformatics Focus</h2>
+            <p class="section__subtitle" data-bind="advancements.subtitle">
+              Current advancements I’m focused on across NGS, AI/ML, and emerging genomics standards.
+            </p>
+          </div>
+          <div class="section__body">
+            <div class="card reveal">
+              <div class="pillRow" id="advancementPills"></div>
+              <ul class="list" id="advancementList"></ul>
+              <div class="note" style="margin-top:14px;">
+                <div class="note__title">Why it matters</div>
+                <div class="note__body" data-bind="advancements.why">
+                  Applying AI/ML to sequencing accelerates variant calling, interpretation, and reporting—while keeping analysis explainable and reliable.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="agency">
+        <div class="container section__grid">
+          <div class="section__head reveal">
+            <h2 class="section__title">AI Automation Agency (AAA)</h2>
+            <p class="section__subtitle" data-bind="agency.subtitle">
+              Businesses are terrified of being left behind. AAA ships workflow packages that integrate cleanly and pay
+              back fast.
+            </p>
+          </div>
+          <div class="section__body reveal">
+            <div class="featureRow">
+              <div class="card">
+                <h3 class="card__title">The product</h3>
+                <p class="card__text" data-bind="agency.product">
+                  Instead of selling hours, I sell outcomes: AI agents that monitor leads, draft personalized replies in
+                  your voice, and update your CRM—automatically.
+                </p>
+                <div class="pillRow">
+                  <span class="pill" data-bind="agency.pricing.setup">$2,000–$5,000 setup</span>
+                  <span class="pill" data-bind="agency.pricing.maint">$300–$500 / month maintenance</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3 class="card__title">Best-fit industries</h3>
+                <ul class="list" id="agencyTargets"></ul>
+              </div>
+            </div>
+
+            <div class="steps">
+              <div class="step">
+                <div class="step__num">01</div>
+                <div class="step__body">
+                  <div class="step__title">Workflow map</div>
+                  <div class="step__text">Identify the messy manual work, define success metrics, and pick the fastest ROI.</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__num">02</div>
+                <div class="step__body">
+                  <div class="step__title">Build & integrate</div>
+                  <div class="step__text">Connect inbox/CRM/data sources, add guardrails, evaluations, and human-in-the-loop.</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__num">03</div>
+                <div class="step__body">
+                  <div class="step__title">Maintain & improve</div>
+                  <div class="step__text">Monitor costs, model drift, errors, and uptime—then iterate based on results.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="moneyMap card">
+              <div class="moneyMap__head">
+                <h3 class="card__title">Your “Money Map” for 2026</h3>
+                <p class="card__text" data-bind="moneyMap.subtitle">
+                  A simple menu of AI-first offers—from low-effort marketplace products to high-leverage SaaS.
+                </p>
+              </div>
+              <div class="moneyMap__tableWrap" role="region" aria-label="Money map table" tabindex="0">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Effort</th>
+                      <th>Strategy</th>
+                      <th>Estimated income</th>
+                    </tr>
+                  </thead>
+                  <tbody id="moneyMapRows"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="writing">
+        <div class="container section__grid">
+          <div class="section__head reveal">
+            <h2 class="section__title">Writing</h2>
+            <p class="section__subtitle" data-bind="writing.subtitle">
+              Short notes on building AI products, evaluation, and automation workflows.
+            </p>
+          </div>
+          <div class="section__body">
+            <div class="gridCards" id="writingGrid" aria-label="Writing list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contact">
+        <div class="container section__grid">
+          <div class="section__head reveal">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle" data-bind="contact.subtitle">
+              Want to collaborate, hire me, or talk research? Send a message.
+            </p>
+          </div>
+
+          <div class="section__body reveal">
+            <div class="contactCard">
+              <div class="contactCard__left">
+                <h3 class="contactCard__title">Fastest way to reach me</h3>
+                <p class="contactCard__text" data-bind="contact.text">
+                  Email works best. If you include context + goals + timeline, I’ll reply faster.
+                </p>
+                <div class="pillRow" id="contactLinks"></div>
+              </div>
+              <form class="contactCard__form" id="contactForm">
+                <label class="field">
+                  <span class="field__label">Your name</span>
+                  <input class="field__input" name="name" autocomplete="name" required />
+                </label>
+                <label class="field">
+                  <span class="field__label">Your email</span>
+                  <input class="field__input" name="email" type="email" autocomplete="email" required />
+                </label>
+                <label class="field">
+                  <span class="field__label">Message</span>
+                  <textarea class="field__input field__input--area" name="message" rows="5" required></textarea>
+                </label>
+                <button class="btn btn--primary" type="submit">Compose email</button>
+                <p class="micro">
+                  This form opens your email client (no backend needed). You can later swap it for a real endpoint.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--small">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text" data-bind="site.name">Nikhil</span>
+          </div>
+          <div class="micro" data-bind="site.tagline">Building reliable AI automation and research-driven products.</div>
+        </div>
+        <div class="footer__right micro">
+          <span>© <span id="year"></span> <span data-bind="site.name">Nikhil</span></span>
+          <span class="dot">•</span>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="dialog" id="detailDialog">
+      <form method="dialog" class="dialog__inner">
+        <div class="dialog__head">
+          <div>
+            <div class="dialog__kicker" id="dialogKicker"></div>
+            <h3 class="dialog__title" id="dialogTitle"></h3>
+          </div>
+          <button class="iconbtn iconbtn--close" aria-label="Close" value="close" type="submit">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="dialog__body">
+          <p class="dialog__lede" id="dialogLede"></p>
+          <div class="pillRow" id="dialogPills"></div>
+          <div class="dialog__content prose" id="dialogBody"></div>
+          <div class="dialog__links" id="dialogLinks"></div>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="assets/content.js"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
