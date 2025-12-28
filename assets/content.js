@@ -102,30 +102,6 @@ window.SITE_CONTENT = {
       },
     ],
   },
-  education: {
-    subtitle: "Academic foundation in bioinformatics with hands-on computational biology and data science.",
-    schools: [
-      {
-        title: "M.Sc. in Bioinformatics",
-        kicker: "School of Biotechnology, Devi Ahilya Vishwavidyalaya",
-        lede: "Focused on computational biology, ML for omics, and applied research methods.",
-      },
-      {
-        title: "B.Sc. in Bioinformatics",
-        kicker: "Government Holkar Science College",
-        lede: "Built fundamentals in biology, computation, and data analysis.",
-      },
-    ],
-    certifications: [
-      "Sabudh Foundation Certificate in Road Scene Analysis",
-      "Dataiku: Core Designer, ML Practitioner, Advanced Designer, Developer, MLOps Practitioner",
-      "National Workshop on Molecular Techniques (Govind Ballabh Pant Institute)",
-      "Mammalian Cell Culture Techniques – Application in Cancer Biology",
-      "Enzymes, Gene Manipulation, and Functional Genomics",
-      "Instrumentation and Immunological Techniques",
-    ],
-    achievements: ["Top Intern, Sabudh Foundation (project delivery excellence)"],
-  },
   projects: {
     subtitle: "Product work, experiments, and systems I’ve shipped (or am actively iterating on).",
     items: [
@@ -345,6 +321,47 @@ window.SITE_CONTENT = {
         effort: "High",
         strategy: "Building a Micro-SaaS or starting an AI Automation Agency.",
         income: "$10,000+ / mo",
+      },
+    ],
+  },
+  blog: {
+    subtitle: "Deep dives into sequencing pipelines, AI automation builds, and the lessons that stick.",
+    items: [
+      {
+        title: "Shipping a clinical-grade WGS pipeline",
+        kicker: "NGS • Reliability",
+        lede: "How I harden alignment, variant calling, and annotation so clinicians trust the output.",
+        tags: ["WGS/WES", "QC", "Reproducibility"],
+        details: [
+          "Checklists for FASTQ QC, reference prep, alignment, duplicate marking, and variant calling sanity checks.",
+          "Automations for sample tracking, pipeline retries, and versioned reports for auditors.",
+          "Benchmarks I track: depth, Ti/Tv, contamination, runtime, and cost per sample.",
+        ],
+        links: [],
+      },
+      {
+        title: "Evaluation-first AI agents for CRMs",
+        kicker: "AAA • Agents",
+        lede: "The monitoring stack I use before letting an agent touch live leads or a CRM.",
+        tags: ["Agents", "LLM evals", "Instrumentation"],
+        details: [
+          "Guardrails: schema validators, canonical responses, and deterministic fallbacks for edge cases.",
+          "Shadow mode launch: route 10% of traffic to the agent, score it, and compare against human replies.",
+          "Cost + latency dashboards that flag regressions before customers notice.",
+        ],
+        links: [],
+      },
+      {
+        title: "What breaks when deploying LangChain in production",
+        kicker: "GenAI • Production",
+        lede: "Notes from building retrieval and orchestration pipelines that withstand messy data.",
+        tags: ["RAG", "Ops", "Observability"],
+        details: [
+          "Chunking and indexing choices that keep recall high without ballooning latency.",
+          "Tracing prompts, model versions, and retrieval hits so debugging is fast.",
+          "Operational runbooks: cold-start caching, circuit breakers, and experiment flags.",
+        ],
+        links: [],
       },
     ],
   },

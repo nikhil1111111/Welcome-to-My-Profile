@@ -41,22 +41,6 @@
       .join("");
   };
 
-  const renderSchools = (schools = []) =>
-    schools
-      .map((s) => {
-        const title = escapeHtml(s.title || "");
-        const kicker = escapeHtml(s.kicker || "");
-        const lede = escapeHtml(s.lede || "");
-        return `
-          <li>
-            <div class="list__title">${title}</div>
-            <div class="micro">${kicker}</div>
-            ${lede ? `<div class="micro">${lede}</div>` : ""}
-          </li>
-        `;
-      })
-      .join("");
-
   const bindTextFields = () => {
     $$("[data-bind]").forEach((el) => {
       const path = el.getAttribute("data-bind");
@@ -218,15 +202,6 @@
     const aboutTools = $("#aboutTools");
     if (aboutTools) aboutTools.innerHTML = renderList(content.about?.tools || []);
 
-    const eduList = $("#educationList");
-    if (eduList) eduList.innerHTML = renderSchools(content.education?.schools || []);
-
-    const certList = $("#certificationList");
-    if (certList) certList.innerHTML = renderList(content.education?.certifications || []);
-
-    const achieveList = $("#achievementList");
-    if (achieveList) achieveList.innerHTML = renderList(content.education?.achievements || []);
-
     const advancementPills = $("#advancementPills");
     if (advancementPills) advancementPills.innerHTML = renderPills(content.advancements?.pillars || []);
 
@@ -274,6 +249,7 @@
     renderCards($("#projectsGrid"), content.projects?.items || [], "Project");
     renderCards($("#experienceGrid"), content.experience?.items || [], "Experience");
     renderCards($("#researchGrid"), content.research?.items || [], "Research");
+    renderCards($("#blogGrid"), content.blog?.items || [], "Blog");
     renderCards($("#writingGrid"), content.writing?.items || [], "Writing");
   };
 
